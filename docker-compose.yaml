@@ -77,1428 +77,1428 @@ services:
       - './config:/ebsi/config'
     command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
     user: root:root
-#
-#  node6:
-#    image: hyperledger/besu:21.1
-#    container_name: node6
-#    restart: always
-#    ports:
-#      - 8551:8545
-#      - 9551:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node6/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node7:
-#    image: hyperledger/besu:21.1
-#    container_name: node7
-#    restart: always
-#    ports:
-#      - 8552:8545
-#      - 9552:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node7/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node8:
-#    image: hyperledger/besu:21.1
-#    container_name: node8
-#    restart: always
-#    ports:
-#      - 8553:8545
-#      - 9553:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node8/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node9:
-#    image: hyperledger/besu:21.1
-#    container_name: node9
-#    restart: always
-#    ports:
-#      - 8554:8545
-#      - 9554:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node9/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node10:
-#    image: hyperledger/besu:21.1
-#    container_name: node10
-#    restart: always
-#    ports:
-#      - 8555:8545
-#      - 9555:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node10/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node11:
-#    image: hyperledger/besu:21.1
-#    container_name: node11
-#    restart: always
-#    ports:
-#      - 8556:8545
-#      - 9556:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node11/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node12:
-#    image: hyperledger/besu:21.1
-#    container_name: node12
-#    restart: always
-#    ports:
-#      - 8557:8545
-#      - 9557:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node12/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node13:
-#    image: hyperledger/besu:21.1
-#    container_name: node13
-#    restart: always
-#    ports:
-#      - 8558:8545
-#      - 9558:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node13/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node14:
-#    image: hyperledger/besu:21.1
-#    container_name: node14
-#    restart: always
-#    ports:
-#      - 8559:8545
-#      - 9559:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node14/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node15:
-#    image: hyperledger/besu:21.1
-#    container_name: node15
-#    restart: always
-#    ports:
-#      - 8560:8545
-#      - 9560:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node15/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node16:
-#    image: hyperledger/besu:21.1
-#    container_name: node16
-#    restart: always
-#    ports:
-#      - 8561:8545
-#      - 9561:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node16/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node17:
-#    image: hyperledger/besu:21.1
-#    container_name: node17
-#    restart: always
-#    ports:
-#      - 8562:8545
-#      - 9562:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node17/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node18:
-#    image: hyperledger/besu:21.1
-#    container_name: node18
-#    restart: always
-#    ports:
-#      - 8563:8545
-#      - 9563:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node18/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node19:
-#    image: hyperledger/besu:21.1
-#    container_name: node19
-#    restart: always
-#    ports:
-#      - 8564:8545
-#      - 9564:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node19/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node20:
-#    image: hyperledger/besu:21.1
-#    container_name: node20
-#    restart: always
-#    ports:
-#      - 8565:8545
-#      - 9565:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node20/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node21:
-#    image: hyperledger/besu:21.1
-#    container_name: node21
-#    restart: always
-#    ports:
-#      - 8566:8545
-#      - 9566:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node21/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node22:
-#    image: hyperledger/besu:21.1
-#    container_name: node22
-#    restart: always
-#    ports:
-#      - 8567:8545
-#      - 9567:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node22/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node23:
-#    image: hyperledger/besu:21.1
-#    container_name: node23
-#    restart: always
-#    ports:
-#      - 8568:8545
-#      - 9568:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node23/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node24:
-#    image: hyperledger/besu:21.1
-#    container_name: node24
-#    restart: always
-#    ports:
-#      - 8569:8545
-#      - 9569:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node24/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node25:
-#    image: hyperledger/besu:21.1
-#    container_name: node25
-#    restart: always
-#    ports:
-#      - 8570:8545
-#      - 9570:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node25/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node26:
-#    image: hyperledger/besu:21.1
-#    container_name: node26
-#    restart: always
-#    ports:
-#      - 8571:8545
-#      - 9571:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node26/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node27:
-#    image: hyperledger/besu:21.1
-#    container_name: node27
-#    restart: always
-#    ports:
-#      - 8572:8545
-#      - 9572:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node27/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node28:
-#    image: hyperledger/besu:21.1
-#    container_name: node28
-#    restart: always
-#    ports:
-#      - 8573:8545
-#      - 9573:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node28/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node29:
-#    image: hyperledger/besu:21.1
-#    container_name: node29
-#    restart: always
-#    ports:
-#      - 8574:8545
-#      - 9574:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node29/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node30:
-#    image: hyperledger/besu:21.1
-#    container_name: node30
-#    restart: always
-#    ports:
-#      - 8575:8545
-#      - 9575:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node30/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node31:
-#    image: hyperledger/besu:21.1
-#    container_name: node31
-#    restart: always
-#    ports:
-#      - 8576:8545
-#      - 9576:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node31/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node32:
-#    image: hyperledger/besu:21.1
-#    container_name: node32
-#    restart: always
-#    ports:
-#      - 8577:8545
-#      - 9577:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node32/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node33:
-#    image: hyperledger/besu:21.1
-#    container_name: node33
-#    restart: always
-#    ports:
-#      - 8578:8545
-#      - 9578:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node33/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node34:
-#    image: hyperledger/besu:21.1
-#    container_name: node34
-#    restart: always
-#    ports:
-#      - 8579:8545
-#      - 9579:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node34/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node35:
-#    image: hyperledger/besu:21.1
-#    container_name: node35
-#    restart: always
-#    ports:
-#      - 8580:8545
-#      - 9580:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node35/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node36:
-#    image: hyperledger/besu:21.1
-#    container_name: node36
-#    restart: always
-#    ports:
-#      - 8581:8545
-#      - 9581:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node36/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node37:
-#    image: hyperledger/besu:21.1
-#    container_name: node37
-#    restart: always
-#    ports:
-#      - 8582:8545
-#      - 9582:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node37/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node38:
-#    image: hyperledger/besu:21.1
-#    container_name: node38
-#    restart: always
-#    ports:
-#      - 8583:8545
-#      - 9583:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node38/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node39:
-#    image: hyperledger/besu:21.1
-#    container_name: node39
-#    restart: always
-#    ports:
-#      - 8584:8545
-#      - 9584:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node39/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node40:
-#    image: hyperledger/besu:21.1
-#    container_name: node40
-#    restart: always
-#    ports:
-#      - 8585:8545
-#      - 9585:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node40/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node41:
-#    image: hyperledger/besu:21.1
-#    container_name: node41
-#    restart: always
-#    ports:
-#      - 8586:8545
-#      - 9586:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node41/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node42:
-#    image: hyperledger/besu:21.1
-#    container_name: node42
-#    restart: always
-#    ports:
-#      - 8587:8545
-#      - 9587:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node42/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node43:
-#    image: hyperledger/besu:21.1
-#    container_name: node43
-#    restart: always
-#    ports:
-#      - 8588:8545
-#      - 9588:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node43/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node44:
-#    image: hyperledger/besu:21.1
-#    container_name: node44
-#    restart: always
-#    ports:
-#      - 8589:8545
-#      - 9589:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node44/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node45:
-#    image: hyperledger/besu:21.1
-#    container_name: node45
-#    restart: always
-#    ports:
-#      - 8590:8545
-#      - 9590:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node45/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node46:
-#    image: hyperledger/besu:21.1
-#    container_name: node46
-#    restart: always
-#    ports:
-#      - 8591:8545
-#      - 9591:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node46/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node47:
-#    image: hyperledger/besu:21.1
-#    container_name: node47
-#    restart: always
-#    ports:
-#      - 8592:8545
-#      - 9592:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node47/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node48:
-#    image: hyperledger/besu:21.1
-#    container_name: node48
-#    restart: always
-#    ports:
-#      - 8593:8545
-#      - 9593:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node48/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node49:
-#    image: hyperledger/besu:21.1
-#    container_name: node49
-#    restart: always
-#    ports:
-#      - 8594:8545
-#      - 9594:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node49/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node50:
-#    image: hyperledger/besu:21.1
-#    container_name: node50
-#    restart: always
-#    ports:
-#      - 8595:8545
-#      - 9595:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node50/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node51:
-#    image: hyperledger/besu:21.1
-#    container_name: node51
-#    restart: always
-#    ports:
-#      - 8596:8545
-#      - 9596:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node51/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node52:
-#    image: hyperledger/besu:21.1
-#    container_name: node52
-#    restart: always
-#    ports:
-#      - 8597:8545
-#      - 9597:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node52/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node53:
-#    image: hyperledger/besu:21.1
-#    container_name: node53
-#    restart: always
-#    ports:
-#      - 8598:8545
-#      - 9598:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node53/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node54:
-#    image: hyperledger/besu:21.1
-#    container_name: node54
-#    restart: always
-#    ports:
-#      - 8599:8545
-#      - 9599:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node54/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node55:
-#    image: hyperledger/besu:21.1
-#    container_name: node55
-#    restart: always
-#    ports:
-#      - 8600:8545
-#      - 9600:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node55/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node56:
-#    image: hyperledger/besu:21.1
-#    container_name: node56
-#    restart: always
-#    ports:
-#      - 8601:8545
-#      - 9601:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node56/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node57:
-#    image: hyperledger/besu:21.1
-#    container_name: node57
-#    restart: always
-#    ports:
-#      - 8602:8545
-#      - 9602:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node57/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node58:
-#    image: hyperledger/besu:21.1
-#    container_name: node58
-#    restart: always
-#    ports:
-#      - 8603:8545
-#      - 9603:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node58/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node59:
-#    image: hyperledger/besu:21.1
-#    container_name: node59
-#    restart: always
-#    ports:
-#      - 8604:8545
-#      - 9604:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node59/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node60:
-#    image: hyperledger/besu:21.1
-#    container_name: node60
-#    restart: always
-#    ports:
-#      - 8605:8545
-#      - 9605:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node60/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node61:
-#    image: hyperledger/besu:21.1
-#    container_name: node61
-#    restart: always
-#    ports:
-#      - 8606:8545
-#      - 9606:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node61/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node62:
-#    image: hyperledger/besu:21.1
-#    container_name: node62
-#    restart: always
-#    ports:
-#      - 8607:8545
-#      - 9607:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node62/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node63:
-#    image: hyperledger/besu:21.1
-#    container_name: node63
-#    restart: always
-#    ports:
-#      - 8608:8545
-#      - 9608:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node63/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node64:
-#    image: hyperledger/besu:21.1
-#    container_name: node64
-#    restart: always
-#    ports:
-#      - 8609:8545
-#      - 9609:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node64/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node65:
-#    image: hyperledger/besu:21.1
-#    container_name: node65
-#    restart: always
-#    ports:
-#      - 8610:8545
-#      - 9610:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node65/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node66:
-#    image: hyperledger/besu:21.1
-#    container_name: node66
-#    restart: always
-#    ports:
-#      - 8611:8545
-#      - 9611:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node66/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node67:
-#    image: hyperledger/besu:21.1
-#    container_name: node67
-#    restart: always
-#    ports:
-#      - 8612:8545
-#      - 9612:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node67/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node68:
-#    image: hyperledger/besu:21.1
-#    container_name: node68
-#    restart: always
-#    ports:
-#      - 8613:8545
-#      - 9613:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node68/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node69:
-#    image: hyperledger/besu:21.1
-#    container_name: node69
-#    restart: always
-#    ports:
-#      - 8614:8545
-#      - 9614:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node69/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node70:
-#    image: hyperledger/besu:21.1
-#    container_name: node70
-#    restart: always
-#    ports:
-#      - 8615:8545
-#      - 9615:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node70/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node71:
-#    image: hyperledger/besu:21.1
-#    container_name: node71
-#    restart: always
-#    ports:
-#      - 8616:8545
-#      - 9616:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node71/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node72:
-#    image: hyperledger/besu:21.1
-#    container_name: node72
-#    restart: always
-#    ports:
-#      - 8617:8545
-#      - 9617:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node72/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node73:
-#    image: hyperledger/besu:21.1
-#    container_name: node73
-#    restart: always
-#    ports:
-#      - 8618:8545
-#      - 9618:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node73/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node74:
-#    image: hyperledger/besu:21.1
-#    container_name: node74
-#    restart: always
-#    ports:
-#      - 8619:8545
-#      - 9619:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node74/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node75:
-#    image: hyperledger/besu:21.1
-#    container_name: node75
-#    restart: always
-#    ports:
-#      - 8620:8545
-#      - 9620:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node75/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node76:
-#    image: hyperledger/besu:21.1
-#    container_name: node76
-#    restart: always
-#    ports:
-#      - 8621:8545
-#      - 9621:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node76/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node77:
-#    image: hyperledger/besu:21.1
-#    container_name: node77
-#    restart: always
-#    ports:
-#      - 8622:8545
-#      - 9622:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node77/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node78:
-#    image: hyperledger/besu:21.1
-#    container_name: node78
-#    restart: always
-#    ports:
-#      - 8623:8545
-#      - 9623:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node78/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node79:
-#    image: hyperledger/besu:21.1
-#    container_name: node79
-#    restart: always
-#    ports:
-#      - 8624:8545
-#      - 9624:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node79/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node80:
-#    image: hyperledger/besu:21.1
-#    container_name: node80
-#    restart: always
-#    ports:
-#      - 8625:8545
-#      - 9625:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node80/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node81:
-#    image: hyperledger/besu:21.1
-#    container_name: node81
-#    restart: always
-#    ports:
-#      - 8626:8545
-#      - 9626:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node81/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node82:
-#    image: hyperledger/besu:21.1
-#    container_name: node82
-#    restart: always
-#    ports:
-#      - 8627:8545
-#      - 9627:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node82/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node83:
-#    image: hyperledger/besu:21.1
-#    container_name: node83
-#    restart: always
-#    ports:
-#      - 8628:8545
-#      - 9628:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node83/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node84:
-#    image: hyperledger/besu:21.1
-#    container_name: node84
-#    restart: always
-#    ports:
-#      - 8629:8545
-#      - 9629:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node84/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node85:
-#    image: hyperledger/besu:21.1
-#    container_name: node85
-#    restart: always
-#    ports:
-#      - 8630:8545
-#      - 9630:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node85/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node86:
-#    image: hyperledger/besu:21.1
-#    container_name: node86
-#    restart: always
-#    ports:
-#      - 8631:8545
-#      - 9631:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node86/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node87:
-#    image: hyperledger/besu:21.1
-#    container_name: node87
-#    restart: always
-#    ports:
-#      - 8632:8545
-#      - 9632:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node87/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node88:
-#    image: hyperledger/besu:21.1
-#    container_name: node88
-#    restart: always
-#    ports:
-#      - 8633:8545
-#      - 9633:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node88/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node89:
-#    image: hyperledger/besu:21.1
-#    container_name: node89
-#    restart: always
-#    ports:
-#      - 8634:8545
-#      - 9634:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node89/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node90:
-#    image: hyperledger/besu:21.1
-#    container_name: node90
-#    restart: always
-#    ports:
-#      - 8635:8545
-#      - 9635:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node90/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node91:
-#    image: hyperledger/besu:21.1
-#    container_name: node91
-#    restart: always
-#    ports:
-#      - 8636:8545
-#      - 9636:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node91/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node92:
-#    image: hyperledger/besu:21.1
-#    container_name: node92
-#    restart: always
-#    ports:
-#      - 8637:8545
-#      - 9637:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node92/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node93:
-#    image: hyperledger/besu:21.1
-#    container_name: node93
-#    restart: always
-#    ports:
-#      - 8638:8545
-#      - 9638:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node93/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node94:
-#    image: hyperledger/besu:21.1
-#    container_name: node94
-#    restart: always
-#    ports:
-#      - 8639:8545
-#      - 9639:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node94/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node95:
-#    image: hyperledger/besu:21.1
-#    container_name: node95
-#    restart: always
-#    ports:
-#      - 8640:8545
-#      - 9640:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node95/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node96:
-#    image: hyperledger/besu:21.1
-#    container_name: node96
-#    restart: always
-#    ports:
-#      - 8641:8545
-#      - 9641:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node96/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node97:
-#    image: hyperledger/besu:21.1
-#    container_name: node97
-#    restart: always
-#    ports:
-#      - 8642:8545
-#      - 9642:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node97/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node98:
-#    image: hyperledger/besu:21.1
-#    container_name: node98
-#    restart: always
-#    ports:
-#      - 8643:8545
-#      - 9643:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node98/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node99:
-#    image: hyperledger/besu:21.1
-#    container_name: node99
-#    restart: always
-#    ports:
-#      - 8644:8545
-#      - 9644:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node99/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
-#
-#  node100:
-#    image: hyperledger/besu:21.1
-#    container_name: node100
-#    restart: always
-#    ports:
-#      - 8645:8545
-#      - 9645:9545
-#    environment:
-#      - REVERT_REASON_ENABLED=true
-#    volumes:
-#      - './node100/data:/ebsi/data'
-#      - './config:/ebsi/config'
-#    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
-#    user: root:root
+
+  node6:
+    image: hyperledger/besu:21.1
+    container_name: node6
+    restart: always
+    ports:
+      - 8551:8545
+      - 9551:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node6/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node7:
+    image: hyperledger/besu:21.1
+    container_name: node7
+    restart: always
+    ports:
+      - 8552:8545
+      - 9552:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node7/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node8:
+    image: hyperledger/besu:21.1
+    container_name: node8
+    restart: always
+    ports:
+      - 8553:8545
+      - 9553:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node8/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node9:
+    image: hyperledger/besu:21.1
+    container_name: node9
+    restart: always
+    ports:
+      - 8554:8545
+      - 9554:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node9/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node10:
+    image: hyperledger/besu:21.1
+    container_name: node10
+    restart: always
+    ports:
+      - 8555:8545
+      - 9555:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node10/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node11:
+    image: hyperledger/besu:21.1
+    container_name: node11
+    restart: always
+    ports:
+      - 8556:8545
+      - 9556:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node11/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node12:
+    image: hyperledger/besu:21.1
+    container_name: node12
+    restart: always
+    ports:
+      - 8557:8545
+      - 9557:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node12/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node13:
+    image: hyperledger/besu:21.1
+    container_name: node13
+    restart: always
+    ports:
+      - 8558:8545
+      - 9558:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node13/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node14:
+    image: hyperledger/besu:21.1
+    container_name: node14
+    restart: always
+    ports:
+      - 8559:8545
+      - 9559:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node14/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node15:
+    image: hyperledger/besu:21.1
+    container_name: node15
+    restart: always
+    ports:
+      - 8560:8545
+      - 9560:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node15/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node16:
+    image: hyperledger/besu:21.1
+    container_name: node16
+    restart: always
+    ports:
+      - 8561:8545
+      - 9561:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node16/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node17:
+    image: hyperledger/besu:21.1
+    container_name: node17
+    restart: always
+    ports:
+      - 8562:8545
+      - 9562:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node17/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node18:
+    image: hyperledger/besu:21.1
+    container_name: node18
+    restart: always
+    ports:
+      - 8563:8545
+      - 9563:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node18/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node19:
+    image: hyperledger/besu:21.1
+    container_name: node19
+    restart: always
+    ports:
+      - 8564:8545
+      - 9564:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node19/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node20:
+    image: hyperledger/besu:21.1
+    container_name: node20
+    restart: always
+    ports:
+      - 8565:8545
+      - 9565:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node20/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node21:
+    image: hyperledger/besu:21.1
+    container_name: node21
+    restart: always
+    ports:
+      - 8566:8545
+      - 9566:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node21/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node22:
+    image: hyperledger/besu:21.1
+    container_name: node22
+    restart: always
+    ports:
+      - 8567:8545
+      - 9567:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node22/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node23:
+    image: hyperledger/besu:21.1
+    container_name: node23
+    restart: always
+    ports:
+      - 8568:8545
+      - 9568:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node23/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node24:
+    image: hyperledger/besu:21.1
+    container_name: node24
+    restart: always
+    ports:
+      - 8569:8545
+      - 9569:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node24/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node25:
+    image: hyperledger/besu:21.1
+    container_name: node25
+    restart: always
+    ports:
+      - 8570:8545
+      - 9570:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node25/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node26:
+    image: hyperledger/besu:21.1
+    container_name: node26
+    restart: always
+    ports:
+      - 8571:8545
+      - 9571:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node26/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node27:
+    image: hyperledger/besu:21.1
+    container_name: node27
+    restart: always
+    ports:
+      - 8572:8545
+      - 9572:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node27/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node28:
+    image: hyperledger/besu:21.1
+    container_name: node28
+    restart: always
+    ports:
+      - 8573:8545
+      - 9573:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node28/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node29:
+    image: hyperledger/besu:21.1
+    container_name: node29
+    restart: always
+    ports:
+      - 8574:8545
+      - 9574:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node29/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node30:
+    image: hyperledger/besu:21.1
+    container_name: node30
+    restart: always
+    ports:
+      - 8575:8545
+      - 9575:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node30/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node31:
+    image: hyperledger/besu:21.1
+    container_name: node31
+    restart: always
+    ports:
+      - 8576:8545
+      - 9576:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node31/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node32:
+    image: hyperledger/besu:21.1
+    container_name: node32
+    restart: always
+    ports:
+      - 8577:8545
+      - 9577:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node32/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node33:
+    image: hyperledger/besu:21.1
+    container_name: node33
+    restart: always
+    ports:
+      - 8578:8545
+      - 9578:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node33/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node34:
+    image: hyperledger/besu:21.1
+    container_name: node34
+    restart: always
+    ports:
+      - 8579:8545
+      - 9579:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node34/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node35:
+    image: hyperledger/besu:21.1
+    container_name: node35
+    restart: always
+    ports:
+      - 8580:8545
+      - 9580:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node35/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node36:
+    image: hyperledger/besu:21.1
+    container_name: node36
+    restart: always
+    ports:
+      - 8581:8545
+      - 9581:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node36/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node37:
+    image: hyperledger/besu:21.1
+    container_name: node37
+    restart: always
+    ports:
+      - 8582:8545
+      - 9582:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node37/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node38:
+    image: hyperledger/besu:21.1
+    container_name: node38
+    restart: always
+    ports:
+      - 8583:8545
+      - 9583:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node38/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node39:
+    image: hyperledger/besu:21.1
+    container_name: node39
+    restart: always
+    ports:
+      - 8584:8545
+      - 9584:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node39/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node40:
+    image: hyperledger/besu:21.1
+    container_name: node40
+    restart: always
+    ports:
+      - 8585:8545
+      - 9585:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node40/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node41:
+    image: hyperledger/besu:21.1
+    container_name: node41
+    restart: always
+    ports:
+      - 8586:8545
+      - 9586:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node41/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node42:
+    image: hyperledger/besu:21.1
+    container_name: node42
+    restart: always
+    ports:
+      - 8587:8545
+      - 9587:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node42/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node43:
+    image: hyperledger/besu:21.1
+    container_name: node43
+    restart: always
+    ports:
+      - 8588:8545
+      - 9588:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node43/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node44:
+    image: hyperledger/besu:21.1
+    container_name: node44
+    restart: always
+    ports:
+      - 8589:8545
+      - 9589:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node44/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node45:
+    image: hyperledger/besu:21.1
+    container_name: node45
+    restart: always
+    ports:
+      - 8590:8545
+      - 9590:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node45/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node46:
+    image: hyperledger/besu:21.1
+    container_name: node46
+    restart: always
+    ports:
+      - 8591:8545
+      - 9591:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node46/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node47:
+    image: hyperledger/besu:21.1
+    container_name: node47
+    restart: always
+    ports:
+      - 8592:8545
+      - 9592:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node47/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node48:
+    image: hyperledger/besu:21.1
+    container_name: node48
+    restart: always
+    ports:
+      - 8593:8545
+      - 9593:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node48/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node49:
+    image: hyperledger/besu:21.1
+    container_name: node49
+    restart: always
+    ports:
+      - 8594:8545
+      - 9594:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node49/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node50:
+    image: hyperledger/besu:21.1
+    container_name: node50
+    restart: always
+    ports:
+      - 8595:8545
+      - 9595:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node50/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node51:
+    image: hyperledger/besu:21.1
+    container_name: node51
+    restart: always
+    ports:
+      - 8596:8545
+      - 9596:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node51/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node52:
+    image: hyperledger/besu:21.1
+    container_name: node52
+    restart: always
+    ports:
+      - 8597:8545
+      - 9597:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node52/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node53:
+    image: hyperledger/besu:21.1
+    container_name: node53
+    restart: always
+    ports:
+      - 8598:8545
+      - 9598:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node53/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node54:
+    image: hyperledger/besu:21.1
+    container_name: node54
+    restart: always
+    ports:
+      - 8599:8545
+      - 9599:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node54/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node55:
+    image: hyperledger/besu:21.1
+    container_name: node55
+    restart: always
+    ports:
+      - 8600:8545
+      - 9600:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node55/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node56:
+    image: hyperledger/besu:21.1
+    container_name: node56
+    restart: always
+    ports:
+      - 8601:8545
+      - 9601:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node56/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node57:
+    image: hyperledger/besu:21.1
+    container_name: node57
+    restart: always
+    ports:
+      - 8602:8545
+      - 9602:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node57/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node58:
+    image: hyperledger/besu:21.1
+    container_name: node58
+    restart: always
+    ports:
+      - 8603:8545
+      - 9603:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node58/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node59:
+    image: hyperledger/besu:21.1
+    container_name: node59
+    restart: always
+    ports:
+      - 8604:8545
+      - 9604:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node59/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node60:
+    image: hyperledger/besu:21.1
+    container_name: node60
+    restart: always
+    ports:
+      - 8605:8545
+      - 9605:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node60/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node61:
+    image: hyperledger/besu:21.1
+    container_name: node61
+    restart: always
+    ports:
+      - 8606:8545
+      - 9606:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node61/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node62:
+    image: hyperledger/besu:21.1
+    container_name: node62
+    restart: always
+    ports:
+      - 8607:8545
+      - 9607:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node62/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node63:
+    image: hyperledger/besu:21.1
+    container_name: node63
+    restart: always
+    ports:
+      - 8608:8545
+      - 9608:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node63/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node64:
+    image: hyperledger/besu:21.1
+    container_name: node64
+    restart: always
+    ports:
+      - 8609:8545
+      - 9609:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node64/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node65:
+    image: hyperledger/besu:21.1
+    container_name: node65
+    restart: always
+    ports:
+      - 8610:8545
+      - 9610:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node65/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node66:
+    image: hyperledger/besu:21.1
+    container_name: node66
+    restart: always
+    ports:
+      - 8611:8545
+      - 9611:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node66/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node67:
+    image: hyperledger/besu:21.1
+    container_name: node67
+    restart: always
+    ports:
+      - 8612:8545
+      - 9612:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node67/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node68:
+    image: hyperledger/besu:21.1
+    container_name: node68
+    restart: always
+    ports:
+      - 8613:8545
+      - 9613:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node68/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node69:
+    image: hyperledger/besu:21.1
+    container_name: node69
+    restart: always
+    ports:
+      - 8614:8545
+      - 9614:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node69/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node70:
+    image: hyperledger/besu:21.1
+    container_name: node70
+    restart: always
+    ports:
+      - 8615:8545
+      - 9615:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node70/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node71:
+    image: hyperledger/besu:21.1
+    container_name: node71
+    restart: always
+    ports:
+      - 8616:8545
+      - 9616:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node71/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node72:
+    image: hyperledger/besu:21.1
+    container_name: node72
+    restart: always
+    ports:
+      - 8617:8545
+      - 9617:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node72/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node73:
+    image: hyperledger/besu:21.1
+    container_name: node73
+    restart: always
+    ports:
+      - 8618:8545
+      - 9618:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node73/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node74:
+    image: hyperledger/besu:21.1
+    container_name: node74
+    restart: always
+    ports:
+      - 8619:8545
+      - 9619:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node74/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node75:
+    image: hyperledger/besu:21.1
+    container_name: node75
+    restart: always
+    ports:
+      - 8620:8545
+      - 9620:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node75/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node76:
+    image: hyperledger/besu:21.1
+    container_name: node76
+    restart: always
+    ports:
+      - 8621:8545
+      - 9621:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node76/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node77:
+    image: hyperledger/besu:21.1
+    container_name: node77
+    restart: always
+    ports:
+      - 8622:8545
+      - 9622:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node77/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node78:
+    image: hyperledger/besu:21.1
+    container_name: node78
+    restart: always
+    ports:
+      - 8623:8545
+      - 9623:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node78/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node79:
+    image: hyperledger/besu:21.1
+    container_name: node79
+    restart: always
+    ports:
+      - 8624:8545
+      - 9624:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node79/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node80:
+    image: hyperledger/besu:21.1
+    container_name: node80
+    restart: always
+    ports:
+      - 8625:8545
+      - 9625:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node80/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node81:
+    image: hyperledger/besu:21.1
+    container_name: node81
+    restart: always
+    ports:
+      - 8626:8545
+      - 9626:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node81/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node82:
+    image: hyperledger/besu:21.1
+    container_name: node82
+    restart: always
+    ports:
+      - 8627:8545
+      - 9627:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node82/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node83:
+    image: hyperledger/besu:21.1
+    container_name: node83
+    restart: always
+    ports:
+      - 8628:8545
+      - 9628:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node83/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node84:
+    image: hyperledger/besu:21.1
+    container_name: node84
+    restart: always
+    ports:
+      - 8629:8545
+      - 9629:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node84/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node85:
+    image: hyperledger/besu:21.1
+    container_name: node85
+    restart: always
+    ports:
+      - 8630:8545
+      - 9630:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node85/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node86:
+    image: hyperledger/besu:21.1
+    container_name: node86
+    restart: always
+    ports:
+      - 8631:8545
+      - 9631:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node86/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node87:
+    image: hyperledger/besu:21.1
+    container_name: node87
+    restart: always
+    ports:
+      - 8632:8545
+      - 9632:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node87/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node88:
+    image: hyperledger/besu:21.1
+    container_name: node88
+    restart: always
+    ports:
+      - 8633:8545
+      - 9633:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node88/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node89:
+    image: hyperledger/besu:21.1
+    container_name: node89
+    restart: always
+    ports:
+      - 8634:8545
+      - 9634:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node89/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node90:
+    image: hyperledger/besu:21.1
+    container_name: node90
+    restart: always
+    ports:
+      - 8635:8545
+      - 9635:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node90/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node91:
+    image: hyperledger/besu:21.1
+    container_name: node91
+    restart: always
+    ports:
+      - 8636:8545
+      - 9636:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node91/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node92:
+    image: hyperledger/besu:21.1
+    container_name: node92
+    restart: always
+    ports:
+      - 8637:8545
+      - 9637:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node92/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node93:
+    image: hyperledger/besu:21.1
+    container_name: node93
+    restart: always
+    ports:
+      - 8638:8545
+      - 9638:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node93/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node94:
+    image: hyperledger/besu:21.1
+    container_name: node94
+    restart: always
+    ports:
+      - 8639:8545
+      - 9639:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node94/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node95:
+    image: hyperledger/besu:21.1
+    container_name: node95
+    restart: always
+    ports:
+      - 8640:8545
+      - 9640:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node95/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node96:
+    image: hyperledger/besu:21.1
+    container_name: node96
+    restart: always
+    ports:
+      - 8641:8545
+      - 9641:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node96/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node97:
+    image: hyperledger/besu:21.1
+    container_name: node97
+    restart: always
+    ports:
+      - 8642:8545
+      - 9642:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node97/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node98:
+    image: hyperledger/besu:21.1
+    container_name: node98
+    restart: always
+    ports:
+      - 8643:8545
+      - 9643:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node98/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node99:
+    image: hyperledger/besu:21.1
+    container_name: node99
+    restart: always
+    ports:
+      - 8644:8545
+      - 9644:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node99/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
+
+  node100:
+    image: hyperledger/besu:21.1
+    container_name: node100
+    restart: always
+    ports:
+      - 8645:8545
+      - 9645:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - './node100/data:/ebsi/data'
+      - './config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    user: root:root
