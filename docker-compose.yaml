@@ -7,8 +7,6 @@ services:
     container_name: node1
     restart: always
     ports:
-      - 7054:7053
-      - 7054:7053/udp
       - 8546:8545
       - 9546:9545
     environment:
@@ -24,8 +22,6 @@ services:
     container_name: node2
     restart: always
     ports:
-      - 7055:7053
-      - 7055:7053/udp
       - 8547:8545
       - 9547:9545
     environment:
@@ -41,8 +37,6 @@ services:
     container_name: node3
     restart: always
     ports:
-      - 7056:7053
-      - 7056:7053/udp
       - 8548:8545
       - 9548:9545
     environment:
@@ -58,8 +52,6 @@ services:
     container_name: node4
     restart: always
     ports:
-      - 7057:7053
-      - 7057:7053/udp
       - 8549:8545
       - 9549:9545
     environment:
@@ -75,8 +67,6 @@ services:
     container_name: node5
     restart: always
     ports:
-      - 7058:7053
-      - 7058:7053/udp
       - 8550:8545
       - 9550:9545
     environment:
@@ -92,8 +82,6 @@ services:
     container_name: node6
     restart: always
     ports:
-      - 7059:7053
-      - 7059:7053/udp
       - 8551:8545
       - 9551:9545
     environment:
@@ -109,8 +97,6 @@ services:
     container_name: node7
     restart: always
     ports:
-      - 7060:7053
-      - 7060:7053/udp
       - 8552:8545
       - 9552:9545
     environment:
@@ -126,8 +112,6 @@ services:
     container_name: node8
     restart: always
     ports:
-      - 7061:7053
-      - 7061:7053/udp
       - 8553:8545
       - 9553:9545
     environment:
@@ -143,8 +127,6 @@ services:
     container_name: node9
     restart: always
     ports:
-      - 7062:7053
-      - 7062:7053/udp
       - 8554:8545
       - 9554:9545
     environment:
@@ -160,8 +142,6 @@ services:
     container_name: node10
     restart: always
     ports:
-      - 7063:7053
-      - 7063:7053/udp
       - 8555:8545
       - 9555:9545
     environment:
@@ -177,8 +157,6 @@ services:
     container_name: node11
     restart: always
     ports:
-      - 7064:7053
-      - 7064:7053/udp
       - 8556:8545
       - 9556:9545
     environment:
@@ -194,8 +172,6 @@ services:
     container_name: node12
     restart: always
     ports:
-      - 7065:7053
-      - 7065:7053/udp
       - 8557:8545
       - 9557:9545
     environment:
@@ -211,8 +187,6 @@ services:
     container_name: node13
     restart: always
     ports:
-      - 7066:7053
-      - 7066:7053/udp
       - 8558:8545
       - 9558:9545
     environment:
@@ -228,8 +202,6 @@ services:
     container_name: node14
     restart: always
     ports:
-      - 7067:7053
-      - 7067:7053/udp
       - 8559:8545
       - 9559:9545
     environment:
@@ -245,8 +217,6 @@ services:
     container_name: node15
     restart: always
     ports:
-      - 7068:7053
-      - 7068:7053/udp
       - 8560:8545
       - 9560:9545
     environment:
@@ -262,8 +232,6 @@ services:
     container_name: node16
     restart: always
     ports:
-      - 7069:7053
-      - 7069:7053/udp
       - 8561:8545
       - 9561:9545
     environment:
@@ -279,8 +247,6 @@ services:
     container_name: node17
     restart: always
     ports:
-      - 7070:7053
-      - 7070:7053/udp
       - 8562:8545
       - 9562:9545
     environment:
@@ -296,8 +262,6 @@ services:
     container_name: node18
     restart: always
     ports:
-      - 7071:7053
-      - 7071:7053/udp
       - 8563:8545
       - 9563:9545
     environment:
@@ -313,8 +277,6 @@ services:
     container_name: node19
     restart: always
     ports:
-      - 7072:7053
-      - 7072:7053/udp
       - 8564:8545
       - 9564:9545
     environment:
@@ -330,8 +292,6 @@ services:
     container_name: node20
     restart: always
     ports:
-      - 7073:7053
-      - 7073:7053/udp
       - 8565:8545
       - 9565:9545
     environment:
@@ -347,8 +307,6 @@ services:
     container_name: node21
     restart: always
     ports:
-      - 7074:7053
-      - 7074:7053/udp
       - 8566:8545
       - 9566:9545
     environment:
@@ -364,8 +322,6 @@ services:
     container_name: node22
     restart: always
     ports:
-      - 7075:7053
-      - 7075:7053/udp
       - 8567:8545
       - 9567:9545
     environment:
@@ -381,8 +337,6 @@ services:
     container_name: node23
     restart: always
     ports:
-      - 7076:7053
-      - 7076:7053/udp
       - 8568:8545
       - 9568:9545
     environment:
@@ -398,8 +352,6 @@ services:
     container_name: node24
     restart: always
     ports:
-      - 7077:7053
-      - 7077:7053/udp
       - 8569:8545
       - 9569:9545
     environment:
@@ -415,8 +367,6 @@ services:
     container_name: node25
     restart: always
     ports:
-      - 7078:7053
-      - 7078:7053/udp
       - 8570:8545
       - 9570:9545
     environment:
@@ -432,8 +382,6 @@ services:
     container_name: node26
     restart: always
     ports:
-      - 7079:7053
-      - 7079:7053/udp
       - 8571:8545
       - 9571:9545
     environment:
@@ -449,8 +397,6 @@ services:
     container_name: node27
     restart: always
     ports:
-      - 7080:7053
-      - 7080:7053/udp
       - 8572:8545
       - 9572:9545
     environment:
@@ -466,8 +412,6 @@ services:
     container_name: node28
     restart: always
     ports:
-      - 7081:7053
-      - 7081:7053/udp
       - 8573:8545
       - 9573:9545
     environment:
@@ -483,8 +427,6 @@ services:
     container_name: node29
     restart: always
     ports:
-      - 7082:7053
-      - 7082:7053/udp
       - 8574:8545
       - 9574:9545
     environment:
@@ -500,8 +442,6 @@ services:
     container_name: node30
     restart: always
     ports:
-      - 7083:7053
-      - 7083:7053/udp
       - 8575:8545
       - 9575:9545
     environment:
@@ -517,8 +457,6 @@ services:
     container_name: node31
     restart: always
     ports:
-      - 7084:7053
-      - 7084:7053/udp
       - 8576:8545
       - 9576:9545
     environment:
@@ -534,8 +472,6 @@ services:
     container_name: node32
     restart: always
     ports:
-      - 7085:7053
-      - 7085:7053/udp
       - 8577:8545
       - 9577:9545
     environment:
@@ -551,8 +487,6 @@ services:
     container_name: node33
     restart: always
     ports:
-      - 7086:7053
-      - 7086:7053/udp
       - 8578:8545
       - 9578:9545
     environment:
@@ -568,8 +502,6 @@ services:
     container_name: node34
     restart: always
     ports:
-      - 7087:7053
-      - 7087:7053/udp
       - 8579:8545
       - 9579:9545
     environment:
@@ -585,8 +517,6 @@ services:
     container_name: node35
     restart: always
     ports:
-      - 7088:7053
-      - 7088:7053/udp
       - 8580:8545
       - 9580:9545
     environment:
@@ -602,8 +532,6 @@ services:
     container_name: node36
     restart: always
     ports:
-      - 7089:7053
-      - 7089:7053/udp
       - 8581:8545
       - 9581:9545
     environment:
@@ -619,8 +547,6 @@ services:
     container_name: node37
     restart: always
     ports:
-      - 7090:7053
-      - 7090:7053/udp
       - 8582:8545
       - 9582:9545
     environment:
@@ -636,8 +562,6 @@ services:
     container_name: node38
     restart: always
     ports:
-      - 7091:7053
-      - 7091:7053/udp
       - 8583:8545
       - 9583:9545
     environment:
@@ -653,8 +577,6 @@ services:
     container_name: node39
     restart: always
     ports:
-      - 7092:7053
-      - 7092:7053/udp
       - 8584:8545
       - 9584:9545
     environment:
@@ -670,8 +592,6 @@ services:
     container_name: node40
     restart: always
     ports:
-      - 7093:7053
-      - 7093:7053/udp
       - 8585:8545
       - 9585:9545
     environment:
@@ -687,8 +607,6 @@ services:
     container_name: node41
     restart: always
     ports:
-      - 7094:7053
-      - 7094:7053/udp
       - 8586:8545
       - 9586:9545
     environment:
@@ -704,8 +622,6 @@ services:
     container_name: node42
     restart: always
     ports:
-      - 7095:7053
-      - 7095:7053/udp
       - 8587:8545
       - 9587:9545
     environment:
@@ -721,8 +637,6 @@ services:
     container_name: node43
     restart: always
     ports:
-      - 7096:7053
-      - 7096:7053/udp
       - 8588:8545
       - 9588:9545
     environment:
@@ -738,8 +652,6 @@ services:
     container_name: node44
     restart: always
     ports:
-      - 7097:7053
-      - 7097:7053/udp
       - 8589:8545
       - 9589:9545
     environment:
@@ -755,8 +667,6 @@ services:
     container_name: node45
     restart: always
     ports:
-      - 7098:7053
-      - 7098:7053/udp
       - 8590:8545
       - 9590:9545
     environment:
@@ -772,8 +682,6 @@ services:
     container_name: node46
     restart: always
     ports:
-      - 7099:7053
-      - 7099:7053/udp
       - 8591:8545
       - 9591:9545
     environment:
@@ -789,8 +697,6 @@ services:
     container_name: node47
     restart: always
     ports:
-      - 7100:7053
-      - 7100:7053/udp
       - 8592:8545
       - 9592:9545
     environment:
@@ -806,8 +712,6 @@ services:
     container_name: node48
     restart: always
     ports:
-      - 7101:7053
-      - 7101:7053/udp
       - 8593:8545
       - 9593:9545
     environment:
@@ -823,8 +727,6 @@ services:
     container_name: node49
     restart: always
     ports:
-      - 7102:7053
-      - 7102:7053/udp
       - 8594:8545
       - 9594:9545
     environment:
@@ -840,8 +742,6 @@ services:
     container_name: node50
     restart: always
     ports:
-      - 7103:7053
-      - 7103:7053/udp
       - 8595:8545
       - 9595:9545
     environment:
@@ -857,8 +757,6 @@ services:
     container_name: node51
     restart: always
     ports:
-      - 7104:7053
-      - 7104:7053/udp
       - 8596:8545
       - 9596:9545
     environment:
@@ -874,8 +772,6 @@ services:
     container_name: node52
     restart: always
     ports:
-      - 7105:7053
-      - 7105:7053/udp
       - 8597:8545
       - 9597:9545
     environment:
@@ -891,8 +787,6 @@ services:
     container_name: node53
     restart: always
     ports:
-      - 7106:7053
-      - 7106:7053/udp
       - 8598:8545
       - 9598:9545
     environment:
@@ -908,8 +802,6 @@ services:
     container_name: node54
     restart: always
     ports:
-      - 7107:7053
-      - 7107:7053/udp
       - 8599:8545
       - 9599:9545
     environment:
@@ -925,8 +817,6 @@ services:
     container_name: node55
     restart: always
     ports:
-      - 7108:7053
-      - 7108:7053/udp
       - 8600:8545
       - 9600:9545
     environment:
@@ -942,8 +832,6 @@ services:
     container_name: node56
     restart: always
     ports:
-      - 7109:7053
-      - 7109:7053/udp
       - 8601:8545
       - 9601:9545
     environment:
@@ -959,8 +847,6 @@ services:
     container_name: node57
     restart: always
     ports:
-      - 7110:7053
-      - 7110:7053/udp
       - 8602:8545
       - 9602:9545
     environment:
@@ -976,8 +862,6 @@ services:
     container_name: node58
     restart: always
     ports:
-      - 7111:7053
-      - 7111:7053/udp
       - 8603:8545
       - 9603:9545
     environment:
@@ -993,8 +877,6 @@ services:
     container_name: node59
     restart: always
     ports:
-      - 7112:7053
-      - 7112:7053/udp
       - 8604:8545
       - 9604:9545
     environment:
@@ -1010,8 +892,6 @@ services:
     container_name: node60
     restart: always
     ports:
-      - 7113:7053
-      - 7113:7053/udp
       - 8605:8545
       - 9605:9545
     environment:
@@ -1027,8 +907,6 @@ services:
     container_name: node61
     restart: always
     ports:
-      - 7114:7053
-      - 7114:7053/udp
       - 8606:8545
       - 9606:9545
     environment:
@@ -1044,8 +922,6 @@ services:
     container_name: node62
     restart: always
     ports:
-      - 7115:7053
-      - 7115:7053/udp
       - 8607:8545
       - 9607:9545
     environment:
@@ -1061,8 +937,6 @@ services:
     container_name: node63
     restart: always
     ports:
-      - 7116:7053
-      - 7116:7053/udp
       - 8608:8545
       - 9608:9545
     environment:
@@ -1078,8 +952,6 @@ services:
     container_name: node64
     restart: always
     ports:
-      - 7117:7053
-      - 7117:7053/udp
       - 8609:8545
       - 9609:9545
     environment:
@@ -1095,8 +967,6 @@ services:
     container_name: node65
     restart: always
     ports:
-      - 7118:7053
-      - 7118:7053/udp
       - 8610:8545
       - 9610:9545
     environment:
@@ -1112,8 +982,6 @@ services:
     container_name: node66
     restart: always
     ports:
-      - 7119:7053
-      - 7119:7053/udp
       - 8611:8545
       - 9611:9545
     environment:
@@ -1129,8 +997,6 @@ services:
     container_name: node67
     restart: always
     ports:
-      - 7120:7053
-      - 7120:7053/udp
       - 8612:8545
       - 9612:9545
     environment:
@@ -1146,8 +1012,6 @@ services:
     container_name: node68
     restart: always
     ports:
-      - 7121:7053
-      - 7121:7053/udp
       - 8613:8545
       - 9613:9545
     environment:
@@ -1163,8 +1027,6 @@ services:
     container_name: node69
     restart: always
     ports:
-      - 7122:7053
-      - 7122:7053/udp
       - 8614:8545
       - 9614:9545
     environment:
@@ -1180,8 +1042,6 @@ services:
     container_name: node70
     restart: always
     ports:
-      - 7123:7053
-      - 7123:7053/udp
       - 8615:8545
       - 9615:9545
     environment:
@@ -1197,8 +1057,6 @@ services:
     container_name: node71
     restart: always
     ports:
-      - 7124:7053
-      - 7124:7053/udp
       - 8616:8545
       - 9616:9545
     environment:
@@ -1214,8 +1072,6 @@ services:
     container_name: node72
     restart: always
     ports:
-      - 7125:7053
-      - 7125:7053/udp
       - 8617:8545
       - 9617:9545
     environment:
@@ -1231,8 +1087,6 @@ services:
     container_name: node73
     restart: always
     ports:
-      - 7126:7053
-      - 7126:7053/udp
       - 8618:8545
       - 9618:9545
     environment:
@@ -1248,8 +1102,6 @@ services:
     container_name: node74
     restart: always
     ports:
-      - 7127:7053
-      - 7127:7053/udp
       - 8619:8545
       - 9619:9545
     environment:
@@ -1265,8 +1117,6 @@ services:
     container_name: node75
     restart: always
     ports:
-      - 7128:7053
-      - 7128:7053/udp
       - 8620:8545
       - 9620:9545
     environment:
@@ -1282,8 +1132,6 @@ services:
     container_name: node76
     restart: always
     ports:
-      - 7129:7053
-      - 7129:7053/udp
       - 8621:8545
       - 9621:9545
     environment:
@@ -1299,8 +1147,6 @@ services:
     container_name: node77
     restart: always
     ports:
-      - 7130:7053
-      - 7130:7053/udp
       - 8622:8545
       - 9622:9545
     environment:
@@ -1316,8 +1162,6 @@ services:
     container_name: node78
     restart: always
     ports:
-      - 7131:7053
-      - 7131:7053/udp
       - 8623:8545
       - 9623:9545
     environment:
@@ -1333,8 +1177,6 @@ services:
     container_name: node79
     restart: always
     ports:
-      - 7132:7053
-      - 7132:7053/udp
       - 8624:8545
       - 9624:9545
     environment:
@@ -1350,8 +1192,6 @@ services:
     container_name: node80
     restart: always
     ports:
-      - 7133:7053
-      - 7133:7053/udp
       - 8625:8545
       - 9625:9545
     environment:
@@ -1367,8 +1207,6 @@ services:
     container_name: node81
     restart: always
     ports:
-      - 7134:7053
-      - 7134:7053/udp
       - 8626:8545
       - 9626:9545
     environment:
@@ -1384,8 +1222,6 @@ services:
     container_name: node82
     restart: always
     ports:
-      - 7135:7053
-      - 7135:7053/udp
       - 8627:8545
       - 9627:9545
     environment:
@@ -1401,8 +1237,6 @@ services:
     container_name: node83
     restart: always
     ports:
-      - 7136:7053
-      - 7136:7053/udp
       - 8628:8545
       - 9628:9545
     environment:
@@ -1418,8 +1252,6 @@ services:
     container_name: node84
     restart: always
     ports:
-      - 7137:7053
-      - 7137:7053/udp
       - 8629:8545
       - 9629:9545
     environment:
@@ -1435,8 +1267,6 @@ services:
     container_name: node85
     restart: always
     ports:
-      - 7138:7053
-      - 7138:7053/udp
       - 8630:8545
       - 9630:9545
     environment:
@@ -1452,8 +1282,6 @@ services:
     container_name: node86
     restart: always
     ports:
-      - 7139:7053
-      - 7139:7053/udp
       - 8631:8545
       - 9631:9545
     environment:
@@ -1469,8 +1297,6 @@ services:
     container_name: node87
     restart: always
     ports:
-      - 7140:7053
-      - 7140:7053/udp
       - 8632:8545
       - 9632:9545
     environment:
@@ -1486,8 +1312,6 @@ services:
     container_name: node88
     restart: always
     ports:
-      - 7141:7053
-      - 7141:7053/udp
       - 8633:8545
       - 9633:9545
     environment:
@@ -1503,8 +1327,6 @@ services:
     container_name: node89
     restart: always
     ports:
-      - 7142:7053
-      - 7142:7053/udp
       - 8634:8545
       - 9634:9545
     environment:
@@ -1520,8 +1342,6 @@ services:
     container_name: node90
     restart: always
     ports:
-      - 7143:7053
-      - 7143:7053/udp
       - 8635:8545
       - 9635:9545
     environment:
@@ -1537,8 +1357,6 @@ services:
     container_name: node91
     restart: always
     ports:
-      - 7144:7053
-      - 7144:7053/udp
       - 8636:8545
       - 9636:9545
     environment:
@@ -1554,8 +1372,6 @@ services:
     container_name: node92
     restart: always
     ports:
-      - 7145:7053
-      - 7145:7053/udp
       - 8637:8545
       - 9637:9545
     environment:
@@ -1571,8 +1387,6 @@ services:
     container_name: node93
     restart: always
     ports:
-      - 7146:7053
-      - 7146:7053/udp
       - 8638:8545
       - 9638:9545
     environment:
@@ -1588,8 +1402,6 @@ services:
     container_name: node94
     restart: always
     ports:
-      - 7147:7053
-      - 7147:7053/udp
       - 8639:8545
       - 9639:9545
     environment:
@@ -1605,8 +1417,6 @@ services:
     container_name: node95
     restart: always
     ports:
-      - 7148:7053
-      - 7148:7053/udp
       - 8640:8545
       - 9640:9545
     environment:
@@ -1622,8 +1432,6 @@ services:
     container_name: node96
     restart: always
     ports:
-      - 7149:7053
-      - 7149:7053/udp
       - 8641:8545
       - 9641:9545
     environment:
@@ -1639,8 +1447,6 @@ services:
     container_name: node97
     restart: always
     ports:
-      - 7150:7053
-      - 7150:7053/udp
       - 8642:8545
       - 9642:9545
     environment:
@@ -1656,8 +1462,6 @@ services:
     container_name: node98
     restart: always
     ports:
-      - 7151:7053
-      - 7151:7053/udp
       - 8643:8545
       - 9643:9545
     environment:
@@ -1673,8 +1477,6 @@ services:
     container_name: node99
     restart: always
     ports:
-      - 7152:7053
-      - 7152:7053/udp
       - 8644:8545
       - 9644:9545
     environment:
@@ -1690,8 +1492,6 @@ services:
     container_name: node100
     restart: always
     ports:
-      - 7153:7053
-      - 7153:7053/udp
       - 8645:8545
       - 9645:9545
     environment:

@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+
+  node1:
+    image: hyperledger/besu:21.1
+    container_name: node1
+    restart: always
+    ports:
+      - 7054:7053
+      - 7054:7053/udp
+      - 8546:8545
+      - 9546:9545
+    environment:
+      - REVERT_REASON_ENABLED=true
+    volumes:
+      - 'node1/data:/ebsi/data'
+      - 'config:/ebsi/config'
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    user: root:root
