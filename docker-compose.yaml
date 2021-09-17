@@ -14,7 +14,7 @@ services:
     volumes:
       - 'node1/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node2:
@@ -29,7 +29,7 @@ services:
     volumes:
       - 'node2/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node3:
@@ -44,7 +44,7 @@ services:
     volumes:
       - 'node3/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node4:
@@ -59,7 +59,7 @@ services:
     volumes:
       - 'node4/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node5:
@@ -74,7 +74,7 @@ services:
     volumes:
       - 'node5/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node6:
@@ -89,7 +89,7 @@ services:
     volumes:
       - 'node6/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node7:
@@ -104,7 +104,7 @@ services:
     volumes:
       - 'node7/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node8:
@@ -119,7 +119,7 @@ services:
     volumes:
       - 'node8/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node9:
@@ -134,7 +134,7 @@ services:
     volumes:
       - 'node9/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node10:
@@ -149,7 +149,7 @@ services:
     volumes:
       - 'node10/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node11:
@@ -164,7 +164,7 @@ services:
     volumes:
       - 'node11/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node12:
@@ -179,7 +179,7 @@ services:
     volumes:
       - 'node12/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node13:
@@ -194,7 +194,7 @@ services:
     volumes:
       - 'node13/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node14:
@@ -209,7 +209,7 @@ services:
     volumes:
       - 'node14/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node15:
@@ -224,7 +224,7 @@ services:
     volumes:
       - 'node15/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node16:
@@ -239,7 +239,7 @@ services:
     volumes:
       - 'node16/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node17:
@@ -254,7 +254,7 @@ services:
     volumes:
       - 'node17/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node18:
@@ -269,7 +269,7 @@ services:
     volumes:
       - 'node18/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node19:
@@ -284,7 +284,7 @@ services:
     volumes:
       - 'node19/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node20:
@@ -299,7 +299,7 @@ services:
     volumes:
       - 'node20/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node21:
@@ -314,7 +314,7 @@ services:
     volumes:
       - 'node21/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node22:
@@ -329,7 +329,7 @@ services:
     volumes:
       - 'node22/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node23:
@@ -344,7 +344,7 @@ services:
     volumes:
       - 'node23/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node24:
@@ -359,7 +359,7 @@ services:
     volumes:
       - 'node24/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node25:
@@ -374,7 +374,7 @@ services:
     volumes:
       - 'node25/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node26:
@@ -389,7 +389,7 @@ services:
     volumes:
       - 'node26/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node27:
@@ -404,7 +404,7 @@ services:
     volumes:
       - 'node27/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node28:
@@ -419,7 +419,7 @@ services:
     volumes:
       - 'node28/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node29:
@@ -434,7 +434,7 @@ services:
     volumes:
       - 'node29/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node30:
@@ -449,7 +449,7 @@ services:
     volumes:
       - 'node30/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node31:
@@ -464,7 +464,7 @@ services:
     volumes:
       - 'node31/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node32:
@@ -479,7 +479,7 @@ services:
     volumes:
       - 'node32/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node33:
@@ -494,7 +494,7 @@ services:
     volumes:
       - 'node33/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node34:
@@ -509,7 +509,7 @@ services:
     volumes:
       - 'node34/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node35:
@@ -524,7 +524,7 @@ services:
     volumes:
       - 'node35/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node36:
@@ -539,7 +539,7 @@ services:
     volumes:
       - 'node36/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node37:
@@ -554,7 +554,7 @@ services:
     volumes:
       - 'node37/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node38:
@@ -569,7 +569,7 @@ services:
     volumes:
       - 'node38/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node39:
@@ -584,7 +584,7 @@ services:
     volumes:
       - 'node39/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node40:
@@ -599,7 +599,7 @@ services:
     volumes:
       - 'node40/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node41:
@@ -614,7 +614,7 @@ services:
     volumes:
       - 'node41/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node42:
@@ -629,7 +629,7 @@ services:
     volumes:
       - 'node42/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node43:
@@ -644,7 +644,7 @@ services:
     volumes:
       - 'node43/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node44:
@@ -659,7 +659,7 @@ services:
     volumes:
       - 'node44/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node45:
@@ -674,7 +674,7 @@ services:
     volumes:
       - 'node45/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node46:
@@ -689,7 +689,7 @@ services:
     volumes:
       - 'node46/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node47:
@@ -704,7 +704,7 @@ services:
     volumes:
       - 'node47/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node48:
@@ -719,7 +719,7 @@ services:
     volumes:
       - 'node48/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node49:
@@ -734,7 +734,7 @@ services:
     volumes:
       - 'node49/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node50:
@@ -749,7 +749,7 @@ services:
     volumes:
       - 'node50/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node51:
@@ -764,7 +764,7 @@ services:
     volumes:
       - 'node51/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node52:
@@ -779,7 +779,7 @@ services:
     volumes:
       - 'node52/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node53:
@@ -794,7 +794,7 @@ services:
     volumes:
       - 'node53/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node54:
@@ -809,7 +809,7 @@ services:
     volumes:
       - 'node54/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node55:
@@ -824,7 +824,7 @@ services:
     volumes:
       - 'node55/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node56:
@@ -839,7 +839,7 @@ services:
     volumes:
       - 'node56/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node57:
@@ -854,7 +854,7 @@ services:
     volumes:
       - 'node57/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node58:
@@ -869,7 +869,7 @@ services:
     volumes:
       - 'node58/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node59:
@@ -884,7 +884,7 @@ services:
     volumes:
       - 'node59/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node60:
@@ -899,7 +899,7 @@ services:
     volumes:
       - 'node60/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node61:
@@ -914,7 +914,7 @@ services:
     volumes:
       - 'node61/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node62:
@@ -929,7 +929,7 @@ services:
     volumes:
       - 'node62/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node63:
@@ -944,7 +944,7 @@ services:
     volumes:
       - 'node63/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node64:
@@ -959,7 +959,7 @@ services:
     volumes:
       - 'node64/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node65:
@@ -974,7 +974,7 @@ services:
     volumes:
       - 'node65/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node66:
@@ -989,7 +989,7 @@ services:
     volumes:
       - 'node66/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node67:
@@ -1004,7 +1004,7 @@ services:
     volumes:
       - 'node67/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node68:
@@ -1019,7 +1019,7 @@ services:
     volumes:
       - 'node68/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node69:
@@ -1034,7 +1034,7 @@ services:
     volumes:
       - 'node69/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node70:
@@ -1049,7 +1049,7 @@ services:
     volumes:
       - 'node70/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node71:
@@ -1064,7 +1064,7 @@ services:
     volumes:
       - 'node71/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node72:
@@ -1079,7 +1079,7 @@ services:
     volumes:
       - 'node72/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node73:
@@ -1094,7 +1094,7 @@ services:
     volumes:
       - 'node73/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node74:
@@ -1109,7 +1109,7 @@ services:
     volumes:
       - 'node74/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node75:
@@ -1124,7 +1124,7 @@ services:
     volumes:
       - 'node75/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node76:
@@ -1139,7 +1139,7 @@ services:
     volumes:
       - 'node76/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node77:
@@ -1154,7 +1154,7 @@ services:
     volumes:
       - 'node77/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node78:
@@ -1169,7 +1169,7 @@ services:
     volumes:
       - 'node78/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node79:
@@ -1184,7 +1184,7 @@ services:
     volumes:
       - 'node79/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node80:
@@ -1199,7 +1199,7 @@ services:
     volumes:
       - 'node80/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node81:
@@ -1214,7 +1214,7 @@ services:
     volumes:
       - 'node81/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node82:
@@ -1229,7 +1229,7 @@ services:
     volumes:
       - 'node82/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node83:
@@ -1244,7 +1244,7 @@ services:
     volumes:
       - 'node83/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node84:
@@ -1259,7 +1259,7 @@ services:
     volumes:
       - 'node84/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node85:
@@ -1274,7 +1274,7 @@ services:
     volumes:
       - 'node85/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node86:
@@ -1289,7 +1289,7 @@ services:
     volumes:
       - 'node86/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node87:
@@ -1304,7 +1304,7 @@ services:
     volumes:
       - 'node87/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node88:
@@ -1319,7 +1319,7 @@ services:
     volumes:
       - 'node88/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node89:
@@ -1334,7 +1334,7 @@ services:
     volumes:
       - 'node89/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node90:
@@ -1349,7 +1349,7 @@ services:
     volumes:
       - 'node90/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node91:
@@ -1364,7 +1364,7 @@ services:
     volumes:
       - 'node91/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node92:
@@ -1379,7 +1379,7 @@ services:
     volumes:
       - 'node92/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node93:
@@ -1394,7 +1394,7 @@ services:
     volumes:
       - 'node93/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node94:
@@ -1409,7 +1409,7 @@ services:
     volumes:
       - 'node94/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node95:
@@ -1424,7 +1424,7 @@ services:
     volumes:
       - 'node95/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node96:
@@ -1439,7 +1439,7 @@ services:
     volumes:
       - 'node96/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node97:
@@ -1454,7 +1454,7 @@ services:
     volumes:
       - 'node97/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node98:
@@ -1469,7 +1469,7 @@ services:
     volumes:
       - 'node98/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node99:
@@ -1484,7 +1484,7 @@ services:
     volumes:
       - 'node99/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root
 
   node100:
@@ -1499,5 +1499,5 @@ services:
     volumes:
       - 'node100/data:/ebsi/data'
       - 'config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@node1:7053" ]
     user: root:root

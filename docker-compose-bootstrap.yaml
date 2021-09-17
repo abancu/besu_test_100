@@ -6,11 +6,6 @@ services:
     image: hyperledger/besu:21.1
     container_name: node1
     restart: always
-    ports:
-      - 7054:7053
-      - 7054:7053/udp
-      - 8546:8545
-      - 9546:9545
     environment:
       - REVERT_REASON_ENABLED=true
     volumes:
