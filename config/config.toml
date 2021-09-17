@@ -1,0 +1,65 @@
+# Config file for Besu as a Regular node in EBSI network as Docker container
+
+# The EBSI network-id. The netowk id for ebsiv2 test according to https://ec.europa.eu/cefdigital/wiki/display/BLOCKCHAININT/RFC+-+Ethereum+Genesis+File+for+the+new+Main-NET+and+Pilot-Net
+network-id=1337
+
+# Operate with free gas, for the moment
+min-gas-price=0
+
+# The data-dir path. Has to be mounted externally to the container
+data-path="/ebsi/data"
+
+# Only connect to the boot nodes
+discovery-enabled=true
+
+# Path to the custom genesis file
+genesis-file="/ebsi/config/genesis.json"
+
+# enable revert reason
+revert-reason-enabled=true
+
+# Allow all hosts to access JSON-RPC API, as long as they are in the same Docker cluster.
+# Access restrictions from outside EBSI node will be enforced by nginx proxy
+host-whitelist=["*"]
+
+# The P2P network configuration
+p2p-enabled=true
+# The following IP should be the external IP of the EBSI node as seen externally
+p2p-host="0.0.0.0"
+p2p-port=7053
+max-peers=200
+
+# nat-method doesn't work with docker image
+# nat-method="upnp"
+
+# Temporarily use the permissions file mechanism, to be changed to Smart Contract permissions
+#permissions-nodes-config-file-enabled=true
+#permissions-nodes-config-file="/root/ebsi/config/permissions_config.toml"
+
+# For the moment disable private transactions (Orion).
+privacy-enabled=false
+
+# JSON-RPC over HTTP configuration
+rpc-http-cors-origins=["all"]
+rpc-http-enabled=true
+rpc-http-host="0.0.0.0"
+rpc-http-port=8545
+rpc-http-api=["ADMIN","ETH","NET","WEB3","IBFT","PERM","DEBUG","MINER","EEA","PRIV","TXPOOL"]
+
+# JSON-RPC over Websockets configuration
+rpc-ws-enabled=true
+rpc-ws-host="0.0.0.0"
+rpc-ws-port=8546
+rpc-ws-api=["ADMIN","ETH","NET","WEB3","IBFT","PERM","DEBUG","MINER","EEA","PRIV","TXPOOL"]
+
+# Logging level. Highly verbose for the moment
+logging="DEBUG"
+
+# Use the FULL syncmode, to store the full blockchain
+sync-mode="FULL"
+
+# Metrics
+metrics-category=["BLOCKCHAIN","ETHEREUM","EXECUTORS","JVM","NETWORK","PEERS","PERMISSIONING","PROCESS","PRUNER","RPC","SYNCHRONIZER","TRANSACTION_POOL","KVSTORE_ROCKSDB","KVSTORE_ROCKSDB_STATS"]
+metrics-enabled=true
+metrics-host="0.0.0.0"
+metrics-port="9545"
