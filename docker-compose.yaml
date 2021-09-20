@@ -9,12 +9,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7053
+      - BESU_P2P_PORT=31337
       - BESU_RPC_HTTP_PORT=8545
     volumes:
       - './node1/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node2:
@@ -24,12 +24,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7054
+      - BESU_P2P_PORT=31338
       - BESU_RPC_HTTP_PORT=8546
     volumes:
       - './node2/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node3:
@@ -39,12 +39,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7055
+      - BESU_P2P_PORT=31339
       - BESU_RPC_HTTP_PORT=8547
     volumes:
       - './node3/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node4:
@@ -54,12 +54,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7056
+      - BESU_P2P_PORT=31340
       - BESU_RPC_HTTP_PORT=8548
     volumes:
       - './node4/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node5:
@@ -69,12 +69,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7057
+      - BESU_P2P_PORT=31341
       - BESU_RPC_HTTP_PORT=8549
     volumes:
       - './node5/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node6:
@@ -84,12 +84,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7058
+      - BESU_P2P_PORT=31342
       - BESU_RPC_HTTP_PORT=8550
     volumes:
       - './node6/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node7:
@@ -99,12 +99,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7059
+      - BESU_P2P_PORT=31343
       - BESU_RPC_HTTP_PORT=8551
     volumes:
       - './node7/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node8:
@@ -114,12 +114,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7060
+      - BESU_P2P_PORT=31344
       - BESU_RPC_HTTP_PORT=8552
     volumes:
       - './node8/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node9:
@@ -129,12 +129,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7061
+      - BESU_P2P_PORT=31345
       - BESU_RPC_HTTP_PORT=8553
     volumes:
       - './node9/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node10:
@@ -144,12 +144,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7062
+      - BESU_P2P_PORT=31346
       - BESU_RPC_HTTP_PORT=8554
     volumes:
       - './node10/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node11:
@@ -159,12 +159,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7063
+      - BESU_P2P_PORT=31347
       - BESU_RPC_HTTP_PORT=8555
     volumes:
       - './node11/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node12:
@@ -174,12 +174,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7064
+      - BESU_P2P_PORT=31348
       - BESU_RPC_HTTP_PORT=8556
     volumes:
       - './node12/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node13:
@@ -189,12 +189,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7065
+      - BESU_P2P_PORT=31349
       - BESU_RPC_HTTP_PORT=8557
     volumes:
       - './node13/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node14:
@@ -204,12 +204,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7066
+      - BESU_P2P_PORT=31350
       - BESU_RPC_HTTP_PORT=8558
     volumes:
       - './node14/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node15:
@@ -219,12 +219,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7067
+      - BESU_P2P_PORT=31351
       - BESU_RPC_HTTP_PORT=8559
     volumes:
       - './node15/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node16:
@@ -234,12 +234,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7068
+      - BESU_P2P_PORT=31352
       - BESU_RPC_HTTP_PORT=8560
     volumes:
       - './node16/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node17:
@@ -249,12 +249,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7069
+      - BESU_P2P_PORT=31353
       - BESU_RPC_HTTP_PORT=8561
     volumes:
       - './node17/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node18:
@@ -264,12 +264,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7070
+      - BESU_P2P_PORT=31354
       - BESU_RPC_HTTP_PORT=8562
     volumes:
       - './node18/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node19:
@@ -279,12 +279,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7071
+      - BESU_P2P_PORT=31355
       - BESU_RPC_HTTP_PORT=8563
     volumes:
       - './node19/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node20:
@@ -294,12 +294,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7072
+      - BESU_P2P_PORT=31356
       - BESU_RPC_HTTP_PORT=8564
     volumes:
       - './node20/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node21:
@@ -309,12 +309,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7073
+      - BESU_P2P_PORT=31357
       - BESU_RPC_HTTP_PORT=8565
     volumes:
       - './node21/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node22:
@@ -324,12 +324,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7074
+      - BESU_P2P_PORT=31358
       - BESU_RPC_HTTP_PORT=8566
     volumes:
       - './node22/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node23:
@@ -339,12 +339,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7075
+      - BESU_P2P_PORT=31359
       - BESU_RPC_HTTP_PORT=8567
     volumes:
       - './node23/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node24:
@@ -354,12 +354,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7076
+      - BESU_P2P_PORT=31360
       - BESU_RPC_HTTP_PORT=8568
     volumes:
       - './node24/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node25:
@@ -369,12 +369,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7077
+      - BESU_P2P_PORT=31361
       - BESU_RPC_HTTP_PORT=8569
     volumes:
       - './node25/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node26:
@@ -384,12 +384,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7078
+      - BESU_P2P_PORT=31362
       - BESU_RPC_HTTP_PORT=8570
     volumes:
       - './node26/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node27:
@@ -399,12 +399,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7079
+      - BESU_P2P_PORT=31363
       - BESU_RPC_HTTP_PORT=8571
     volumes:
       - './node27/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node28:
@@ -414,12 +414,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7080
+      - BESU_P2P_PORT=31364
       - BESU_RPC_HTTP_PORT=8572
     volumes:
       - './node28/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node29:
@@ -429,12 +429,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7081
+      - BESU_P2P_PORT=31365
       - BESU_RPC_HTTP_PORT=8573
     volumes:
       - './node29/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node30:
@@ -444,12 +444,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7082
+      - BESU_P2P_PORT=31366
       - BESU_RPC_HTTP_PORT=8574
     volumes:
       - './node30/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node31:
@@ -459,12 +459,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7083
+      - BESU_P2P_PORT=31367
       - BESU_RPC_HTTP_PORT=8575
     volumes:
       - './node31/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node32:
@@ -474,12 +474,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7084
+      - BESU_P2P_PORT=31368
       - BESU_RPC_HTTP_PORT=8576
     volumes:
       - './node32/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node33:
@@ -489,12 +489,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7085
+      - BESU_P2P_PORT=31369
       - BESU_RPC_HTTP_PORT=8577
     volumes:
       - './node33/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node34:
@@ -504,12 +504,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7086
+      - BESU_P2P_PORT=31370
       - BESU_RPC_HTTP_PORT=8578
     volumes:
       - './node34/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node35:
@@ -519,12 +519,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7087
+      - BESU_P2P_PORT=31371
       - BESU_RPC_HTTP_PORT=8579
     volumes:
       - './node35/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node36:
@@ -534,12 +534,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7088
+      - BESU_P2P_PORT=31372
       - BESU_RPC_HTTP_PORT=8580
     volumes:
       - './node36/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node37:
@@ -549,12 +549,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7089
+      - BESU_P2P_PORT=31373
       - BESU_RPC_HTTP_PORT=8581
     volumes:
       - './node37/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node38:
@@ -564,12 +564,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7090
+      - BESU_P2P_PORT=31374
       - BESU_RPC_HTTP_PORT=8582
     volumes:
       - './node38/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node39:
@@ -579,12 +579,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7091
+      - BESU_P2P_PORT=31375
       - BESU_RPC_HTTP_PORT=8583
     volumes:
       - './node39/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node40:
@@ -594,12 +594,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7092
+      - BESU_P2P_PORT=31376
       - BESU_RPC_HTTP_PORT=8584
     volumes:
       - './node40/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node41:
@@ -609,12 +609,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7093
+      - BESU_P2P_PORT=31377
       - BESU_RPC_HTTP_PORT=8585
     volumes:
       - './node41/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node42:
@@ -624,12 +624,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7094
+      - BESU_P2P_PORT=31378
       - BESU_RPC_HTTP_PORT=8586
     volumes:
       - './node42/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node43:
@@ -639,12 +639,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7095
+      - BESU_P2P_PORT=31379
       - BESU_RPC_HTTP_PORT=8587
     volumes:
       - './node43/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node44:
@@ -654,12 +654,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7096
+      - BESU_P2P_PORT=31380
       - BESU_RPC_HTTP_PORT=8588
     volumes:
       - './node44/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node45:
@@ -669,12 +669,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7097
+      - BESU_P2P_PORT=31381
       - BESU_RPC_HTTP_PORT=8589
     volumes:
       - './node45/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node46:
@@ -684,12 +684,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7098
+      - BESU_P2P_PORT=31382
       - BESU_RPC_HTTP_PORT=8590
     volumes:
       - './node46/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node47:
@@ -699,12 +699,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7099
+      - BESU_P2P_PORT=31383
       - BESU_RPC_HTTP_PORT=8591
     volumes:
       - './node47/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node48:
@@ -714,12 +714,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7100
+      - BESU_P2P_PORT=31384
       - BESU_RPC_HTTP_PORT=8592
     volumes:
       - './node48/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node49:
@@ -729,12 +729,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7101
+      - BESU_P2P_PORT=31385
       - BESU_RPC_HTTP_PORT=8593
     volumes:
       - './node49/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node50:
@@ -744,12 +744,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7102
+      - BESU_P2P_PORT=31386
       - BESU_RPC_HTTP_PORT=8594
     volumes:
       - './node50/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node51:
@@ -759,12 +759,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7103
+      - BESU_P2P_PORT=31387
       - BESU_RPC_HTTP_PORT=8595
     volumes:
       - './node51/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node52:
@@ -774,12 +774,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7104
+      - BESU_P2P_PORT=31388
       - BESU_RPC_HTTP_PORT=8596
     volumes:
       - './node52/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node53:
@@ -789,12 +789,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7105
+      - BESU_P2P_PORT=31389
       - BESU_RPC_HTTP_PORT=8597
     volumes:
       - './node53/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node54:
@@ -804,12 +804,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7106
+      - BESU_P2P_PORT=31390
       - BESU_RPC_HTTP_PORT=8598
     volumes:
       - './node54/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node55:
@@ -819,12 +819,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7107
+      - BESU_P2P_PORT=31391
       - BESU_RPC_HTTP_PORT=8599
     volumes:
       - './node55/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node56:
@@ -834,12 +834,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7108
+      - BESU_P2P_PORT=31392
       - BESU_RPC_HTTP_PORT=8600
     volumes:
       - './node56/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node57:
@@ -849,12 +849,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7109
+      - BESU_P2P_PORT=31393
       - BESU_RPC_HTTP_PORT=8601
     volumes:
       - './node57/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node58:
@@ -864,12 +864,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7110
+      - BESU_P2P_PORT=31394
       - BESU_RPC_HTTP_PORT=8602
     volumes:
       - './node58/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node59:
@@ -879,12 +879,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7111
+      - BESU_P2P_PORT=31395
       - BESU_RPC_HTTP_PORT=8603
     volumes:
       - './node59/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node60:
@@ -894,12 +894,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7112
+      - BESU_P2P_PORT=31396
       - BESU_RPC_HTTP_PORT=8604
     volumes:
       - './node60/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node61:
@@ -909,12 +909,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7113
+      - BESU_P2P_PORT=31397
       - BESU_RPC_HTTP_PORT=8605
     volumes:
       - './node61/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node62:
@@ -924,12 +924,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7114
+      - BESU_P2P_PORT=31398
       - BESU_RPC_HTTP_PORT=8606
     volumes:
       - './node62/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node63:
@@ -939,12 +939,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7115
+      - BESU_P2P_PORT=31399
       - BESU_RPC_HTTP_PORT=8607
     volumes:
       - './node63/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node64:
@@ -954,12 +954,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7116
+      - BESU_P2P_PORT=31400
       - BESU_RPC_HTTP_PORT=8608
     volumes:
       - './node64/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node65:
@@ -969,12 +969,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7117
+      - BESU_P2P_PORT=31401
       - BESU_RPC_HTTP_PORT=8609
     volumes:
       - './node65/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node66:
@@ -984,12 +984,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7118
+      - BESU_P2P_PORT=31402
       - BESU_RPC_HTTP_PORT=8610
     volumes:
       - './node66/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node67:
@@ -999,12 +999,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7119
+      - BESU_P2P_PORT=31403
       - BESU_RPC_HTTP_PORT=8611
     volumes:
       - './node67/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node68:
@@ -1014,12 +1014,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7120
+      - BESU_P2P_PORT=31404
       - BESU_RPC_HTTP_PORT=8612
     volumes:
       - './node68/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node69:
@@ -1029,12 +1029,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7121
+      - BESU_P2P_PORT=31405
       - BESU_RPC_HTTP_PORT=8613
     volumes:
       - './node69/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node70:
@@ -1044,12 +1044,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7122
+      - BESU_P2P_PORT=31406
       - BESU_RPC_HTTP_PORT=8614
     volumes:
       - './node70/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node71:
@@ -1059,12 +1059,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7123
+      - BESU_P2P_PORT=31407
       - BESU_RPC_HTTP_PORT=8615
     volumes:
       - './node71/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node72:
@@ -1074,12 +1074,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7124
+      - BESU_P2P_PORT=31408
       - BESU_RPC_HTTP_PORT=8616
     volumes:
       - './node72/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node73:
@@ -1089,12 +1089,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7125
+      - BESU_P2P_PORT=31409
       - BESU_RPC_HTTP_PORT=8617
     volumes:
       - './node73/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node74:
@@ -1104,12 +1104,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7126
+      - BESU_P2P_PORT=31410
       - BESU_RPC_HTTP_PORT=8618
     volumes:
       - './node74/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node75:
@@ -1119,12 +1119,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7127
+      - BESU_P2P_PORT=31411
       - BESU_RPC_HTTP_PORT=8619
     volumes:
       - './node75/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node76:
@@ -1134,12 +1134,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7128
+      - BESU_P2P_PORT=31412
       - BESU_RPC_HTTP_PORT=8620
     volumes:
       - './node76/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node77:
@@ -1149,12 +1149,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7129
+      - BESU_P2P_PORT=31413
       - BESU_RPC_HTTP_PORT=8621
     volumes:
       - './node77/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node78:
@@ -1164,12 +1164,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7130
+      - BESU_P2P_PORT=31414
       - BESU_RPC_HTTP_PORT=8622
     volumes:
       - './node78/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node79:
@@ -1179,12 +1179,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7131
+      - BESU_P2P_PORT=31415
       - BESU_RPC_HTTP_PORT=8623
     volumes:
       - './node79/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node80:
@@ -1194,12 +1194,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7132
+      - BESU_P2P_PORT=31416
       - BESU_RPC_HTTP_PORT=8624
     volumes:
       - './node80/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node81:
@@ -1209,12 +1209,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7133
+      - BESU_P2P_PORT=31417
       - BESU_RPC_HTTP_PORT=8625
     volumes:
       - './node81/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node82:
@@ -1224,12 +1224,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7134
+      - BESU_P2P_PORT=31418
       - BESU_RPC_HTTP_PORT=8626
     volumes:
       - './node82/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node83:
@@ -1239,12 +1239,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7135
+      - BESU_P2P_PORT=31419
       - BESU_RPC_HTTP_PORT=8627
     volumes:
       - './node83/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node84:
@@ -1254,12 +1254,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7136
+      - BESU_P2P_PORT=31420
       - BESU_RPC_HTTP_PORT=8628
     volumes:
       - './node84/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node85:
@@ -1269,12 +1269,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7137
+      - BESU_P2P_PORT=31421
       - BESU_RPC_HTTP_PORT=8629
     volumes:
       - './node85/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node86:
@@ -1284,12 +1284,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7138
+      - BESU_P2P_PORT=31422
       - BESU_RPC_HTTP_PORT=8630
     volumes:
       - './node86/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node87:
@@ -1299,12 +1299,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7139
+      - BESU_P2P_PORT=31423
       - BESU_RPC_HTTP_PORT=8631
     volumes:
       - './node87/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node88:
@@ -1314,12 +1314,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7140
+      - BESU_P2P_PORT=31424
       - BESU_RPC_HTTP_PORT=8632
     volumes:
       - './node88/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node89:
@@ -1329,12 +1329,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7141
+      - BESU_P2P_PORT=31425
       - BESU_RPC_HTTP_PORT=8633
     volumes:
       - './node89/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node90:
@@ -1344,12 +1344,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7142
+      - BESU_P2P_PORT=31426
       - BESU_RPC_HTTP_PORT=8634
     volumes:
       - './node90/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node91:
@@ -1359,12 +1359,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7143
+      - BESU_P2P_PORT=31427
       - BESU_RPC_HTTP_PORT=8635
     volumes:
       - './node91/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node92:
@@ -1374,12 +1374,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7144
+      - BESU_P2P_PORT=31428
       - BESU_RPC_HTTP_PORT=8636
     volumes:
       - './node92/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node93:
@@ -1389,12 +1389,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7145
+      - BESU_P2P_PORT=31429
       - BESU_RPC_HTTP_PORT=8637
     volumes:
       - './node93/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node94:
@@ -1404,12 +1404,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7146
+      - BESU_P2P_PORT=31430
       - BESU_RPC_HTTP_PORT=8638
     volumes:
       - './node94/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node95:
@@ -1419,12 +1419,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7147
+      - BESU_P2P_PORT=31431
       - BESU_RPC_HTTP_PORT=8639
     volumes:
       - './node95/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node96:
@@ -1434,12 +1434,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7148
+      - BESU_P2P_PORT=31432
       - BESU_RPC_HTTP_PORT=8640
     volumes:
       - './node96/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node97:
@@ -1449,12 +1449,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7149
+      - BESU_P2P_PORT=31433
       - BESU_RPC_HTTP_PORT=8641
     volumes:
       - './node97/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node98:
@@ -1464,12 +1464,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7150
+      - BESU_P2P_PORT=31434
       - BESU_RPC_HTTP_PORT=8642
     volumes:
       - './node98/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node99:
@@ -1479,12 +1479,12 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7151
+      - BESU_P2P_PORT=31435
       - BESU_RPC_HTTP_PORT=8643
     volumes:
       - './node99/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
 
   node100:
@@ -1494,10 +1494,10 @@ services:
     network_mode: host
     environment:
       - REVERT_REASON_ENABLED=true
-      - BESU_P2P_PORT=7152
+      - BESU_P2P_PORT=31436
       - BESU_RPC_HTTP_PORT=8644
     volumes:
       - './node100/data:/ebsi/data'
       - './config:/ebsi/config'
-    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:7053" ]
+    command: [ "--config-file=/ebsi/config/config.toml", "--tx-pool-max-size=40000", "--max-peers=200", "--bootnodes=enode://4a59b63d1f6bc222cbd7ccbc672c593f97a2b1e1387c690a23ee36ef95fdf3f98b3176f55149f484b70fa80f70480a8e8c48ebde57606321937cfd6f7d68ddfa@172.19.0.3:31337" ]
     user: root:root
