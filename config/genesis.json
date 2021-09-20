@@ -5,7 +5,10 @@
     "ibft2" : {
       "blockperiodseconds" : 8,
       "epochlength" : 30000,
-      "requesttimeoutseconds" : 16
+      "requesttimeoutseconds" : 16,
+      "messageQueueLimit": 50000,
+      "duplicateMesageLimit": 5000,
+      "futureMessagesLimit": 50000
     }
   },
   "nonce" : "0x0",
