@@ -10,6 +10,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31337
       - BESU_RPC_HTTP_PORT=8545
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9400
     volumes:
       - './node1/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -25,6 +27,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31338
       - BESU_RPC_HTTP_PORT=8546
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9401
     volumes:
       - './node2/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -40,6 +44,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31339
       - BESU_RPC_HTTP_PORT=8547
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9402
     volumes:
       - './node3/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -55,6 +61,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31340
       - BESU_RPC_HTTP_PORT=8548
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9403
     volumes:
       - './node4/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -70,6 +78,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31341
       - BESU_RPC_HTTP_PORT=8549
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9404
     volumes:
       - './node5/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -85,6 +95,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31342
       - BESU_RPC_HTTP_PORT=8550
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9405
     volumes:
       - './node6/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -100,6 +112,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31343
       - BESU_RPC_HTTP_PORT=8551
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9406
     volumes:
       - './node7/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -115,6 +129,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31344
       - BESU_RPC_HTTP_PORT=8552
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9407
     volumes:
       - './node8/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -130,6 +146,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31345
       - BESU_RPC_HTTP_PORT=8553
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9408
     volumes:
       - './node9/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -145,6 +163,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31346
       - BESU_RPC_HTTP_PORT=8554
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9409
     volumes:
       - './node10/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -160,6 +180,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31347
       - BESU_RPC_HTTP_PORT=8555
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9410
     volumes:
       - './node11/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -175,6 +197,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31348
       - BESU_RPC_HTTP_PORT=8556
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9411
     volumes:
       - './node12/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -190,6 +214,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31349
       - BESU_RPC_HTTP_PORT=8557
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9412
     volumes:
       - './node13/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -205,6 +231,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31350
       - BESU_RPC_HTTP_PORT=8558
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9413
     volumes:
       - './node14/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -220,6 +248,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31351
       - BESU_RPC_HTTP_PORT=8559
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9414
     volumes:
       - './node15/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -235,6 +265,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31352
       - BESU_RPC_HTTP_PORT=8560
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9415
     volumes:
       - './node16/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -250,6 +282,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31353
       - BESU_RPC_HTTP_PORT=8561
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9416
     volumes:
       - './node17/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -265,6 +299,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31354
       - BESU_RPC_HTTP_PORT=8562
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9417
     volumes:
       - './node18/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -280,6 +316,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31355
       - BESU_RPC_HTTP_PORT=8563
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9418
     volumes:
       - './node19/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -295,6 +333,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31356
       - BESU_RPC_HTTP_PORT=8564
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9419
     volumes:
       - './node20/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -310,6 +350,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31357
       - BESU_RPC_HTTP_PORT=8565
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9420
     volumes:
       - './node21/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -325,6 +367,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31358
       - BESU_RPC_HTTP_PORT=8566
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9421
     volumes:
       - './node22/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -340,6 +384,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31359
       - BESU_RPC_HTTP_PORT=8567
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9422
     volumes:
       - './node23/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -355,6 +401,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31360
       - BESU_RPC_HTTP_PORT=8568
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9423
     volumes:
       - './node24/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -370,6 +418,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31361
       - BESU_RPC_HTTP_PORT=8569
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9424
     volumes:
       - './node25/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -385,6 +435,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31362
       - BESU_RPC_HTTP_PORT=8570
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9425
     volumes:
       - './node26/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -400,6 +452,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31363
       - BESU_RPC_HTTP_PORT=8571
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9426
     volumes:
       - './node27/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -415,6 +469,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31364
       - BESU_RPC_HTTP_PORT=8572
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9427
     volumes:
       - './node28/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -430,6 +486,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31365
       - BESU_RPC_HTTP_PORT=8573
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9428
     volumes:
       - './node29/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -445,6 +503,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31366
       - BESU_RPC_HTTP_PORT=8574
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9429
     volumes:
       - './node30/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -460,6 +520,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31367
       - BESU_RPC_HTTP_PORT=8575
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9430
     volumes:
       - './node31/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -475,6 +537,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31368
       - BESU_RPC_HTTP_PORT=8576
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9431
     volumes:
       - './node32/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -490,6 +554,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31369
       - BESU_RPC_HTTP_PORT=8577
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9432
     volumes:
       - './node33/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -505,6 +571,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31370
       - BESU_RPC_HTTP_PORT=8578
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9433
     volumes:
       - './node34/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -520,6 +588,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31371
       - BESU_RPC_HTTP_PORT=8579
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9434
     volumes:
       - './node35/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -535,6 +605,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31372
       - BESU_RPC_HTTP_PORT=8580
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9435
     volumes:
       - './node36/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -550,6 +622,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31373
       - BESU_RPC_HTTP_PORT=8581
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9436
     volumes:
       - './node37/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -565,6 +639,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31374
       - BESU_RPC_HTTP_PORT=8582
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9437
     volumes:
       - './node38/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -580,6 +656,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31375
       - BESU_RPC_HTTP_PORT=8583
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9438
     volumes:
       - './node39/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -595,6 +673,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31376
       - BESU_RPC_HTTP_PORT=8584
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9439
     volumes:
       - './node40/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -610,6 +690,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31377
       - BESU_RPC_HTTP_PORT=8585
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9440
     volumes:
       - './node41/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -625,6 +707,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31378
       - BESU_RPC_HTTP_PORT=8586
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9441
     volumes:
       - './node42/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -640,6 +724,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31379
       - BESU_RPC_HTTP_PORT=8587
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9442
     volumes:
       - './node43/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -655,6 +741,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31380
       - BESU_RPC_HTTP_PORT=8588
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9443
     volumes:
       - './node44/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -670,6 +758,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31381
       - BESU_RPC_HTTP_PORT=8589
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9444
     volumes:
       - './node45/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -685,6 +775,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31382
       - BESU_RPC_HTTP_PORT=8590
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9445
     volumes:
       - './node46/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -700,6 +792,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31383
       - BESU_RPC_HTTP_PORT=8591
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9446
     volumes:
       - './node47/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -715,6 +809,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31384
       - BESU_RPC_HTTP_PORT=8592
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9447
     volumes:
       - './node48/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -730,6 +826,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31385
       - BESU_RPC_HTTP_PORT=8593
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9448
     volumes:
       - './node49/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -745,6 +843,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31386
       - BESU_RPC_HTTP_PORT=8594
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9449
     volumes:
       - './node50/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -760,6 +860,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31387
       - BESU_RPC_HTTP_PORT=8595
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9450
     volumes:
       - './node51/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -775,6 +877,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31388
       - BESU_RPC_HTTP_PORT=8596
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9451
     volumes:
       - './node52/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -790,6 +894,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31389
       - BESU_RPC_HTTP_PORT=8597
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9452
     volumes:
       - './node53/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -805,6 +911,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31390
       - BESU_RPC_HTTP_PORT=8598
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9453
     volumes:
       - './node54/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -820,6 +928,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31391
       - BESU_RPC_HTTP_PORT=8599
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9454
     volumes:
       - './node55/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -835,6 +945,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31392
       - BESU_RPC_HTTP_PORT=8600
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9455
     volumes:
       - './node56/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -850,6 +962,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31393
       - BESU_RPC_HTTP_PORT=8601
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9456
     volumes:
       - './node57/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -865,6 +979,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31394
       - BESU_RPC_HTTP_PORT=8602
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9457
     volumes:
       - './node58/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -880,6 +996,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31395
       - BESU_RPC_HTTP_PORT=8603
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9458
     volumes:
       - './node59/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -895,6 +1013,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31396
       - BESU_RPC_HTTP_PORT=8604
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9459
     volumes:
       - './node60/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -910,6 +1030,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31397
       - BESU_RPC_HTTP_PORT=8605
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9460
     volumes:
       - './node61/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -925,6 +1047,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31398
       - BESU_RPC_HTTP_PORT=8606
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9461
     volumes:
       - './node62/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -940,6 +1064,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31399
       - BESU_RPC_HTTP_PORT=8607
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9462
     volumes:
       - './node63/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -955,6 +1081,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31400
       - BESU_RPC_HTTP_PORT=8608
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9463
     volumes:
       - './node64/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -970,6 +1098,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31401
       - BESU_RPC_HTTP_PORT=8609
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9464
     volumes:
       - './node65/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -985,6 +1115,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31402
       - BESU_RPC_HTTP_PORT=8610
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9465
     volumes:
       - './node66/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1000,6 +1132,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31403
       - BESU_RPC_HTTP_PORT=8611
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9466
     volumes:
       - './node67/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1015,6 +1149,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31404
       - BESU_RPC_HTTP_PORT=8612
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9467
     volumes:
       - './node68/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1030,6 +1166,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31405
       - BESU_RPC_HTTP_PORT=8613
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9468
     volumes:
       - './node69/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1045,6 +1183,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31406
       - BESU_RPC_HTTP_PORT=8614
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9469
     volumes:
       - './node70/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1060,6 +1200,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31407
       - BESU_RPC_HTTP_PORT=8615
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9470
     volumes:
       - './node71/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1075,6 +1217,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31408
       - BESU_RPC_HTTP_PORT=8616
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9471
     volumes:
       - './node72/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1090,6 +1234,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31409
       - BESU_RPC_HTTP_PORT=8617
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9472
     volumes:
       - './node73/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1105,6 +1251,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31410
       - BESU_RPC_HTTP_PORT=8618
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9473
     volumes:
       - './node74/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1120,6 +1268,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31411
       - BESU_RPC_HTTP_PORT=8619
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9474
     volumes:
       - './node75/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1135,6 +1285,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31412
       - BESU_RPC_HTTP_PORT=8620
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9475
     volumes:
       - './node76/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1150,6 +1302,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31413
       - BESU_RPC_HTTP_PORT=8621
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9476
     volumes:
       - './node77/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1165,6 +1319,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31414
       - BESU_RPC_HTTP_PORT=8622
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9477
     volumes:
       - './node78/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1180,6 +1336,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31415
       - BESU_RPC_HTTP_PORT=8623
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9478
     volumes:
       - './node79/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1195,6 +1353,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31416
       - BESU_RPC_HTTP_PORT=8624
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9479
     volumes:
       - './node80/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1210,6 +1370,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31417
       - BESU_RPC_HTTP_PORT=8625
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9480
     volumes:
       - './node81/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1225,6 +1387,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31418
       - BESU_RPC_HTTP_PORT=8626
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9481
     volumes:
       - './node82/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1240,6 +1404,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31419
       - BESU_RPC_HTTP_PORT=8627
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9482
     volumes:
       - './node83/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1255,6 +1421,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31420
       - BESU_RPC_HTTP_PORT=8628
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9483
     volumes:
       - './node84/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1270,6 +1438,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31421
       - BESU_RPC_HTTP_PORT=8629
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9484
     volumes:
       - './node85/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1285,6 +1455,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31422
       - BESU_RPC_HTTP_PORT=8630
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9485
     volumes:
       - './node86/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1300,6 +1472,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31423
       - BESU_RPC_HTTP_PORT=8631
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9486
     volumes:
       - './node87/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1315,6 +1489,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31424
       - BESU_RPC_HTTP_PORT=8632
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9487
     volumes:
       - './node88/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1330,6 +1506,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31425
       - BESU_RPC_HTTP_PORT=8633
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9488
     volumes:
       - './node89/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1345,6 +1523,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31426
       - BESU_RPC_HTTP_PORT=8634
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9489
     volumes:
       - './node90/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1360,6 +1540,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31427
       - BESU_RPC_HTTP_PORT=8635
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9490
     volumes:
       - './node91/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1375,6 +1557,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31428
       - BESU_RPC_HTTP_PORT=8636
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9491
     volumes:
       - './node92/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1390,6 +1574,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31429
       - BESU_RPC_HTTP_PORT=8637
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9492
     volumes:
       - './node93/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1405,6 +1591,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31430
       - BESU_RPC_HTTP_PORT=8638
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9493
     volumes:
       - './node94/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1420,6 +1608,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31431
       - BESU_RPC_HTTP_PORT=8639
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9494
     volumes:
       - './node95/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1435,6 +1625,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31432
       - BESU_RPC_HTTP_PORT=8640
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9495
     volumes:
       - './node96/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1450,6 +1642,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31433
       - BESU_RPC_HTTP_PORT=8641
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9496
     volumes:
       - './node97/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1465,6 +1659,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31434
       - BESU_RPC_HTTP_PORT=8642
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9497
     volumes:
       - './node98/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1480,6 +1676,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31435
       - BESU_RPC_HTTP_PORT=8643
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9498
     volumes:
       - './node99/data:/ebsi/data'
       - './config:/ebsi/config'
@@ -1495,6 +1693,8 @@ services:
       - REVERT_REASON_ENABLED=true
       - BESU_P2P_PORT=31436
       - BESU_RPC_HTTP_PORT=8644
+      - BESU_METRICS_ENABLED=true
+      - BESU_METRICS_PORT=9499
     volumes:
       - './node100/data:/ebsi/data'
       - './config:/ebsi/config'
