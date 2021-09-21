@@ -9,8 +9,23 @@
       "messageQueueLimit": 50000,
       "duplicateMesageLimit": 5000,
       "futureMessagesLimit": 50000
+    },
+    "transitions": {
+      "ibft2": [
+        {
+          "block": 0,
+          "validators": [
+            "0x024d0d4473f6720f90a7a9fc2e6a979fc5a1a8f1",
+            "0x312b563fdb6756677edede9319db86c7699b1d33",
+            "0x3543b4fa87d221ed3b69189da20d3d3103806891",
+            "0x35e75804935258cfcc4ea3d4bd8c6d4072dfc247",
+            "0xf92bbe9ddc72f5e78494879ee371e79d6df6ddc3"
+          ]
+        }
+      ]
     }
   },
+
   "nonce" : "0x0",
   "timestamp" : "0x0",
   "gasLimit" : "0x47b760",
