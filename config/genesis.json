@@ -9,9 +9,8 @@
       "messageQueueLimit": 50000,
       "duplicateMesageLimit": 5000,
       "futureMessagesLimit": 50000
-    },
+    }
   },
-
   "nonce" : "0x0",
   "timestamp" : "0x0",
   "gasLimit" : "0x47b760",
